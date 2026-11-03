@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>사전등록 | 진주 문화재 야행</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/registration.css"><script src="js/registration.js" defer></script></head>
+<body class="registration-body">
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">진주</span><span>문화재 야행</span></a><a class="header-apply" href="index.html">행사 페이지로 돌아가기 ↗</a></header>
+<main class="register-main">
+  <a class="back-link" href="index.html">← 행사 페이지</a>
+  <p class="overline">PRE-REGISTRATION</p><h1>달빛 아래 만나는<br><em>진주의 밤</em></h1>
+  <p class="register-lead">가족과 함께 즐길 프로그램을 선택하고 사전등록을 진행해 주세요.</p>
+  <div class="register-layout">
+    <aside class="register-summary"><span class="tag">FESTIVAL INFORMATION</span><h2>진주 문화재 야행</h2><p>2026. 11. 14.(토) – 11. 15.(일)</p><p>18:00 – 22:00<br>진주성 및 원도심 일원</p><div class="summary-note">※ 웹 제작 실습을 위한 가상 신청 페이지입니다. 실제 신청 정보는 서버에 저장되지 않습니다.</div></aside>
+    <form id="registration-form" class="register-form">
+      <h2>참가 신청 정보</h2>
+      <label>신청자 이름 <input name="name" type="text" placeholder="이름을 입력해 주세요" required></label>
+      <div class="form-row"><label>연락처 <input name="phone" type="tel" placeholder="010-0000-0000" required></label><label>이메일 <input name="email" type="email" placeholder="example@email.com" required></label></div>
+      <label>참가 날짜<select name="date" required><option value="">날짜를 선택해 주세요</option><option>11월 14일(토)</option><option>11월 15일(일)</option><option>양일 모두</option></select></label>
+      <label>참가 인원<select name="people" required><option value="">인원을 선택해 주세요</option><option>1명</option><option>2명</option><option>3명</option><option>4명</option><option>5명 이상</option></select></label>
+      <fieldset><legend>관심 프로그램 (복수 선택 가능)</legend><label class="check"><input type="checkbox" name="program" value="달빛 성곽 산책"> 달빛 성곽 산책</label><label class="check"><input type="checkbox" name="program" value="풍류 한마당"> 풍류 한마당</label><label class="check"><input type="checkbox" name="program" value="전통 공예 놀이터"> 전통 공예 놀이터</label><label class="check"><input type="checkbox" name="program" value="달빛 야시장"> 달빛 야시장</label></fieldset>
+      <label class="check agree"><input type="checkbox" required> 개인정보 수집 및 이용 안내를 확인했으며 동의합니다. (데모)</label>
+      <button class="submit-button" type="submit">사전등록 신청하기 <span>→</span></button>
+      <p class="form-help">제출 시 실제 접수가 아닌 화면상 신청 완료 안내가 표시됩니다.</p>
+    </form>
+  </div>
+  <div class="success-message" id="success-message" role="status" aria-live="polite"><span>✓</span><h2>신청이 완료되었습니다!</h2><p id="success-detail"></p><a class="dark-button" href="index.html">행사 페이지로 돌아가기 ↗</a></div>
+</main>
+<footer><p>© 2026 JINJU NIGHT CULTURE FESTIVAL · DEMO</p><p>가상 행사 신청 페이지</p></footer>
+</body></html>
